@@ -1,0 +1,93 @@
+{% extends "base.html" %} {% load static %}
+{% load blog_tags %}
+
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles/ruls.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/aos-master/dist/aos.css' %}">
+{% endblock styles %}
+
+
+
+{% block content %}
+<!-- Home -->
+
+<div class=" secondary_home">
+	<div class="breadcrumbs_container">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="{% url 'website:index' %}">خانه</a></li>
+							<li>حریم خصوصی</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- cv -->
+
+
+<div class="privacy">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-12 ruls-title" data-aos="fade-left" data-aos-duration="2000"  data-aos-anchor-placement="top-bottom">
+				<h1>حریم خصوصی</h1>
+            </div>
+            
+            <div class="col-lg-12" data-aos="fade-up" data-aos-duration="2000"  data-aos-anchor-placement="top-bottom">
+                <div class="description">
+                    
+                    <div class="des-content">
+                        <p>
+                            کنترل ارتباطات هوشمند آریا در راستای حفظ امنیت و حریم خصوصی کاربران خود اعلام می کند که از هرگونه 
+                            اطلاعات وارد شده توسط کاربران اعم از ایمیل، پیام هاو هرگونه اطلاعات شخصی، محافظت کرده و به هیچ عنوان این اطلاعات را 
+                            در اختیار سازمان ها و مراکز دیگر به منظور تبلیغات با خدمات دیگر ارائه ندهد
+                        </p>
+                        <p>
+                             در صورت هر گونه سوال یا ایهام در ان مورد می توانید از طریق فرم تماس با ما ، پیام خود را به ما انتقال دهید.
+                        </p>
+                    </div>
+                    
+                    <div class="des-title">
+                        <h2>
+                            ما چه اطلاعاتی از کاربران جمع آوری می کنیم؟!!
+                        </h2>
+                    </div>
+                    <div class="des-content">
+                        <p>
+                            با ورود شما به icc-aria.ir اطلاعاتی همچون مدت زمان حضور شما، 
+                            تعداد دفعات بازدید، نوع مرورگر، دستگاه مورد استفاده و دیگر اطلاعات فنی که در بهینه سازی و افزایش 
+                            کیفیت سرویس دهی به شما کاربران گرامی کمک کند را جمع آوری می کنیم و این اطلاعات به هیچ وجه در اختیار سازمان ثالث 
+                            قرار نمی گیرد.
+                        </p>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+   
+   
+
+</div>
+
+
+{% endblock %}
+{% block javascripts %}
+<script src="{% static 'plugins/aos-master/dist/aos.js' %}"></script>
+<script src="{% static 'js/pages.js' %}"></script>
+<script>
+    AOS.init({
+        once: true
+    });
+</script>
+{% endblock javascripts %}

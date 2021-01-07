@@ -1,0 +1,105 @@
+{% extends "base.html" %} {% load static %}
+{% load blog_tags %}
+
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles/ruls.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/aos-master/dist/aos.css' %}">
+{% endblock styles %}
+
+
+
+{% block content %}
+<!-- Home -->
+
+<div class=" secondary_home">
+	<div class="breadcrumbs_container">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="{% url 'website:index' %}">خانه</a></li>
+							<li>شرایط استفاده</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- cv -->
+
+
+<div class="ruls">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-12 ruls-title" data-aos="fade-left" data-aos-duration="2000"  data-aos-anchor-placement="top-bottom">
+				<h1>شرایط استفاده</h1>
+            </div>
+            
+            <div class="col-lg-12" data-aos="fade-up" data-aos-duration="2000"  data-aos-anchor-placement="top-bottom">
+                <div class="description">
+                    <p>
+                        <i class="fa fa-check-circle ml-1"></i>
+                        دانشجویان و برنامه نویسان عزیز، لطفا به هنگام شرکت در دوره ها و استفاده از مطالب، 
+                        موارد زیر را رعایت فرمایید .
+                    </p>
+
+                    <div class="des-title">
+                        <h2>
+                           آموزش رایگان
+                        </h2>
+                    </div>
+                    <div class="des-content">
+                        <p>
+                            کنترل ارتباطات هوشمند آریا در طی سال های اخیر در حوزه برنامه نویسی، آموزش های خود را ارائه کرده است و همچنان در تلاش هستیم تا 
+                            با آمرزش فناوری های مختلف در گسترش برنامه نویسی شرکت داشته باشیم،
+                                  ما بر این اعتقاد داریم که انتشار اطلاعات و دانش باعث پیشرفت ما و حوزه کاری ما می شود و این 
+                                  دانش باید بصورت آزاد و رایگان در اختیار همه قرار بگیرد. امیدواریم بتوانیم اثری هر چند کم ولی موثر در راستای 
+                                  پیشرفت فناوری داشته باشیم.
+                        </p>
+                        
+                    </div>
+
+                    <div class="des-title">
+                        <h2>
+                            حق مالکیت مطالب
+                        </h2>
+                    </div>
+                    <div class="des-content">
+                        <p>
+                            همانگونه که شرح داده شد، استفاده از مطالب سایت بصورت رایگان در دسترس است و صرفا با ثبت نام در سایت شما به محتوای آموزشی
+                             دسترسی خواهید داشت، لذا خواهشمند است به هنگام استفاده از مطالب در سایت ها و منابع  دیگر منبع مطالب را نیز 
+                            ذکر کنید. همچینین اعلام می کند که حق مالکیت مادی و معنوی محتوای سایت 
+                            متعلق به کنترل ارتباطات هوشمند آریا می باشد و هر گونه سو استفاده از آن مورد 
+                            پیگرد قانونی قرار می گیرد.
+                        </p>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            
+        </div>
+    </div>
+   
+   
+   
+
+</div>
+
+
+{% endblock %}
+{% block javascripts %}
+<script src="{% static 'plugins/aos-master/dist/aos.js' %}"></script>
+<script src="{% static 'js/pages.js' %}"></script>
+<script>
+    AOS.init({
+        once: true
+    });
+</script>
+{% endblock javascripts %}

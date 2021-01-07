@@ -1,0 +1,16 @@
+django
+django-bootstrap-breadcrumbs
+django-view-breadcrumbs
+django-compressor
+django-crispy-forms
+django-google-analytics-app
+django-model-utils
+django-recaptcha2
+django-ckeditor
+django-taggit
+django-imagekit
+django-robots
+django-meta
+Jinja2
+Pillow
+psycopg2-binary 

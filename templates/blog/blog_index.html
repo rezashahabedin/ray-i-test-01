@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% load static %}
+{% block content %}
+{% load blog_tags %}
+<div class="container">
+  <div class="mdl-grid site-max-width">
+  {% for post in posts %}
+    <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+      <div class="mdl-card__media">
+        <img class="article-image" src="{{ post.image_medium.url }}" border="0" alt="{{ post.image_alt }}">
+      </div>
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        {{ post.content|excerpt:30 }}
+      </div><br>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{% url 'blog:single' post.slug  %}">
+          Learn More
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+
+</div>
+{% endblock content %}
